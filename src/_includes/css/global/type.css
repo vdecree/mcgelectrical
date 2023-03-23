@@ -8,16 +8,17 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: var(--font-bold);
+  font-weight: var(--font-normal);
+  font-family: var(--font-serif);
   line-height: var(--leading-none);
 }
 
 h1 {
-  font-size: var(--text-900);
+  font-size: var(--text-800);
 }
 
 h2 {
-  font-size: var(--text-800);
+  font-size: var(--text-700);
 }
 
 h3 {

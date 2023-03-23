@@ -1,0 +1,18 @@
+.button{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    display: inline-block;
+    text-decoration: none;
+    border-radius: var(--border-radius-small);
+    transition: background 100ms;
+}
+
+.button:hover{
+    background-color: var(--color-buttonHover);
+}
+
+.button--med{
+    padding: .9rem 2.5rem;
+}

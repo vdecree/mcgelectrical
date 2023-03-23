@@ -11,21 +11,40 @@ module.exports = {
   },
   theme: {
     colors: {
-      primary: '#ff5400',
-      secondary: '#86c7f0',
+      primary: 'hsl(43, 66%, 58%)',
+      secondary: '#081A2F',
       light: '#f3f3f3',
-      dark: '#252525'
+      dark: '#141414',
+      darkGrey: '#616161',
+      buttonHover: 'hsl(33, 66%, 48%)',
+    },
+    fontFamily: {
+      'sans': ['"Inter", Helvetica, Arial, sans-serif' ],
+      'serif': ['"Lora", ui-serif, Georgia']
+    },
+    wrapperMaxWidth: {
+      midshort: '82rem',
+      short: '58rem',
+      dwarf: '47rem',
+    },
+    borderRadius: {
+      small: '2px',
+      med: '3px',
     },
     fontSize: {
       // https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12
-      200: 'clamp(0.91rem, calc(0.89rem + 0.10vw), 0.96rem)',
-      300: 'clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem)',
-      400: 'clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem)',
-      500: 'clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem)',
-      600: 'clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem)',
-      700: 'clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem)',
-      800: 'clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem)',
-      900: 'clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem)'
+      200: 'clamp(0.72rem, calc(0.81rem + -0.09vw), 0.79rem)',
+      300: 'clamp(0.89rem, calc(0.89rem + 0.01vw), 0.90rem)',
+      400: 'clamp(1.00rem, calc(0.97rem + 0.16vw), 1.13rem)',
+      500: 'clamp(1.13rem, calc(1.05rem + 0.35vw), 1.41rem)',
+      600: 'clamp(1.27rem, calc(1.14rem + 0.62vw), 1.76rem)',
+      700: 'clamp(1.42rem, calc(1.23rem + 0.97vw), 2.20rem)',
+      800: 'clamp(1.60rem, calc(1.32rem + 1.43vw), 2.75rem)',
+      900: 'clamp(1.80rem, calc(1.39rem + 2.04vw), 3.43rem)',
+      1000: 'clamp(2.03rem, calc(1.46rem + 2.83vw), 4.29rem)',
+      1100: 'clamp(2.28rem, calc(1.51rem + 3.85vw), 5.36rem)',
+      1200: 'clamp(2.57rem, calc(1.53rem + 5.18vw), 6.71rem)',
+      1300: 'clamp(2.89rem, calc(1.51rem + 6.87vw), 8.38rem)'
     },
     screens: {
       'sm': '640px',
@@ -55,12 +74,26 @@ module.exports = {
       fontFamily: 'font',
       fontWeight: 'font',
       lineHeight: 'leading',
+      wrapperMaxWidth: 'wrapper-max-width',
+      borderRadius: 'border-radius',
     }),
     tailwindCustomUtilities({
       spacing: {
         name: 'flow-space',
         property: '--flow-space',
       },
+      wrapperMaxWidth: {
+        name: 'wrapper-max-width',
+        property: 'max-width',
+      },
+      colors: {
+        name: 'color',
+        property: 'color',
+      },
+      background: {
+        name: 'color',
+        property: 'background-color',
+      }
     })
   ]
 };
