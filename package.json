@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "npm-run-all -p dev:*",
-    "dev:css": "NODE_ENV=production npx tailwindcss -o src/_includes/css/utility/tokens.css --watch",
+    "dev:css": "cross-env NODE_ENV=production npx tailwindcss -o src/_includes/css/utility/tokens.css --watch",
+    "admin": "npx netlify-cms-proxy-server",
     "dev:11ty": "eleventy --serve --incremental",
     "production": "npx eleventy"
   },
@@ -27,6 +28,7 @@
     "@bly-th/tailwind-css-variables": "^1.0.0",
     "@bly-th/tailwind-custom-utilities": "^1.0.0",
     "clean-css": "^4.2.3",
+    "cross-env": "^7.0.3",
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.2.6"
   }

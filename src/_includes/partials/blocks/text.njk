@@ -1,0 +1,7 @@
+<section class="text [ {% if block.spacingtop %}{{ block.spacingtop }}{% endif %} {% if block.spacingbottom %}{{ block.spacingbottom }}{% endif %} ]">
+  <div class="[ wrapper ] [ wrapper-max-width-short ]">
+    <div class="flow">
+      {{ block.content | markdown | safe }}
+    </div>
+  </div>
+</section>
